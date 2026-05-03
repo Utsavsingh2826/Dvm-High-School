@@ -12,6 +12,7 @@ import Gallery from './components/Gallery'
 import Achievers from './components/Achievers'
 import AchieversPreview from './components/AchieversPreview'
 import Footer from './components/Footer'
+import CounselingForm from './components/CounselingForm'
 import ScrollToTop from './utils/ScrollToTop'
 
 const Home = () => (
@@ -25,11 +26,16 @@ const Home = () => (
 )
 
 function App() {
+  const [isFormOpen, setIsFormOpen] = React.useState(false);
+
+  const openForm = () => setIsFormOpen(true);
+  const closeForm = () => setIsFormOpen(false);
+
   return (
     <Router>
       <ScrollToTop />
       <div className="min-h-screen bg-white">
-        <Navbar />
+        <Navbar onOpenForm={openForm} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/activities" element={<Activities />} />
@@ -37,7 +43,9 @@ function App() {
           <Route path="/social-work" element={<SocialWork />} />
           <Route path="/achievers" element={<Achievers />} />
         </Routes>
-        <Footer />
+        <Footer onOpenForm={openForm} />
+        
+        <CounselingForm isOpen={isFormOpen} onClose={closeForm} />
       </div>
     </Router>
   )

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Phone, Mail, MapPin, Instagram, Youtube } from 'lucide-react'
 
-function Footer() {
+function Footer({ onOpenForm }) {
   // Removed newsletter subscription handler as per request
 
   return (
@@ -14,7 +14,10 @@ function Footer() {
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Join hundreds of students who are already experiencing excellence in education at DVM High School.
           </p>
-          <button className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all">
+          <button 
+            onClick={onOpenForm}
+            className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all"
+          >
             Apply Now & Get Free Counseling
           </button>
         </div>

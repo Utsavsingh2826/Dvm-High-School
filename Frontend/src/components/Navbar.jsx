@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react'
 import './Navbar.css'
 
-function Navbar() {
+function Navbar({ onOpenForm }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
