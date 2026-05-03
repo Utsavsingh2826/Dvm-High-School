@@ -35,7 +35,7 @@ const slides = [
     image: '/Screenshot 2026-04-28 123012 - Copy.png',
     title: 'Building Tomorrow\'s Leaders Today',
     subtitle: 'Join our vibrant school community where every child is valued, supported and inspired.',
-    cta: 'Enroll Now',
+    cta: 'Schedule Visit',
   },
   {
     id: 6,
@@ -178,7 +178,9 @@ export default function HeroSlider() {
                     transition: 'opacity 0.8s ease 0.9s, transform 0.8s ease 0.9s',
                   }}>
                     <a
-                      href="#about"
+                      href={slide.id === 5 ? "https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." : (slide.cta.includes('Courses') ? '#courses' : '#about')}
+                      target={slide.id === 5 ? "_blank" : undefined}
+                      rel={slide.id === 5 ? "noopener noreferrer" : undefined}
                       style={{
                         background: 'linear-gradient(135deg, #f97316, #ea580c)',
                         color: '#fff',
@@ -197,7 +199,9 @@ export default function HeroSlider() {
                       {slide.cta}
                     </a>
                     <a
-                      href="#contact"
+                      href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20DVM%20High%20School."
+                      target="_blank"
+                      rel="noopener noreferrer"
                       style={{
                         background: 'rgba(255,255,255,0.12)',
                         color: '#fff',

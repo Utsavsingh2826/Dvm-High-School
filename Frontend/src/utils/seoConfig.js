@@ -17,19 +17,17 @@ export const SEO_CONFIG = {
   
   // Contact Information
   contact: {
-    phone: "+91 123 456 789",
-    email: "info@dvmhighschool.com",
-    address: "Kandivali, Poisar, Mumbai - 400067",
-    latitude: "19.1136",
-    longitude: "72.8697"
+    phone: "+91 9022081772",
+    email: "dvmhighschool2021@gmail.com",
+    address: "Poisar, Kandivali (East), Mumbai - 400101",
+    latitude: "19.2045",
+    longitude: "72.8522"
   },
 
   // Social Media
   social: {
-    facebook: "https://facebook.com/dvmhighschool",
-    instagram: "https://instagram.com/dvmhighschool",
-    twitter: "https://twitter.com/dvmhighschool",
-    linkedin: "https://linkedin.com/company/dvmhighschool"
+    instagram: "https://www.instagram.com/dvm.highschoolofficials?igsh=NHE0cXg5N2RmdGh1",
+    youtube: "https://youtube.com/@dvmhighschooljrcollegeofficial?si=INm1qBpSDA3MmRw7"
   }
 }
 

@@ -64,10 +64,15 @@ function Navbar() {
             <Link to="/activities" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Activities</Link>
             <Link to="/social-work" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Social Work</Link>
             <Link to="/achievers" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Achievers</Link>
-            <a href="/#contact" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Contact</a>
-            <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
-              Apply Now
-            </button>
+            <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20DVM%20High%20School." target="_blank" rel="noopener noreferrer" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Contact Us</a>
+            <a 
+              href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all"
+            >
+              Schedule Visit
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,10 +94,15 @@ function Navbar() {
               <Link to="/activities" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Activities</Link>
               <Link to="/social-work" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Social Work</Link>
               <Link to="/achievers" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Achievers</Link>
-              <a href="/#contact" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Contact</a>
-              <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg font-semibold w-full mt-2">
-                Apply Now
-              </button>
+              <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20DVM%20High%20School." target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Contact Us</a>
+              <a 
+                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg font-semibold w-full mt-2 text-center"
+              >
+                Schedule Visit
+              </a>
             </div>
           </div>
         )}

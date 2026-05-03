@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Youtube } from 'lucide-react'
 
 function Footer() {
-  const [email, setEmail] = useState('')
-
-  const handleSubscribe = (e) => {
-    e.preventDefault()
-    // Handle newsletter subscription
-    setEmail('')
-  }
+  // Removed newsletter subscription handler as per request
 
   return (
     <footer className="bg-blue-900 text-white">
@@ -71,30 +65,27 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Contact & Newsletter */}
+            {/* Contact Info */}
             <div>
-              <h3 className="font-bold text-lg mb-6">Stay Updated</h3>
-              <form onSubmit={handleSubscribe} className="mb-6">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-2 rounded-lg text-blue-900 bg-white/10 border border-white/20 focus:outline-none focus:border-orange-500 mb-3 placeholder-gray-400"
-                  required
-                />
-                <button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 py-2 rounded-lg font-semibold transition-all">
-                  Subscribe
-                </button>
-              </form>
-              <div className="space-y-2 text-sm text-gray-400">
-                <div className="flex items-center gap-2">
-                  <Phone size={16} />
-                  <span>9022081772 / 9820745556</span>
+              <h3 className="font-bold text-lg mb-6">Contact Us</h3>
+              <div className="space-y-4 text-sm text-gray-400">
+                <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.open('https://wa.me/919022081772', '_blank')}>
+                  <div className="w-10 h-10 bg-white/5 group-hover:bg-green-500/20 rounded-full flex items-center justify-center transition-all">
+                    <Phone size={18} className="group-hover:text-green-500" />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Call / WhatsApp</p>
+                    <p>+91 9022081772</p>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Mail size={16} />
-                  <span>dvmhighschool2021@gmail.com</span>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center">
+                    <Mail size={18} />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Email Us</p>
+                    <p>dvmhighschool2021@gmail.com</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,17 +101,11 @@ function Footer() {
                 <p className="text-gray-500 text-sm">Mon-Fri: 8:00 AM - 4:00 PM</p>
               </div>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all">
-                  <Facebook size={18} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all">
+                <a href="https://www.instagram.com/dvm.highschoolofficials?igsh=NHE0cXg5N2RmdGh1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all">
                   <Instagram size={18} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all">
-                  <Twitter size={18} />
-                </a>
-                <a href="#" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all">
-                  <Linkedin size={18} />
+                <a href="https://youtube.com/@dvmhighschooljrcollegeofficial?si=INm1qBpSDA3MmRw7" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-red-600 rounded-full flex items-center justify-center transition-all">
+                  <Youtube size={18} />
                 </a>
               </div>
             </div>
