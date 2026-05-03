@@ -35,10 +35,18 @@ function Navbar() {
               <span>dvmhighschool2021@gmail.com</span>
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <MapPin size={16} />
-            <span>Kandivali (East), Mumbai - 400101</span>
-          </div>
+          <a 
+            href="https://maps.app.goo.gl/9UTeePTkGUDN6hQY6" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex flex-col items-center md:items-start hover:text-orange-400 transition-colors"
+          >
+            <span className="text-[10px] bg-orange-500/20 px-2 py-0.5 rounded mb-1 animate-pulse">(Click for Directions 👇)</span>
+            <div className="flex items-center gap-2">
+              <MapPin size={16} />
+              <span>Kandivali (East), Mumbai - 400101</span>
+            </div>
+          </a>
         </div>
       </div>
 

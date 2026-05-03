@@ -94,10 +94,18 @@ function Footer() {
           <div className="border-t border-white/20 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-6 md:mb-0">
-                <div className="flex items-center gap-2 mb-3 text-gray-400">
-                  <MapPin size={18} />
-                  <span>Poisar, Kandivali (East), Mumbai - 400101</span>
-                </div>
+                <a 
+                  href="https://maps.app.goo.gl/9UTeePTkGUDN6hQY6" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex flex-col mb-3 text-gray-400 hover:text-orange-500 transition-all"
+                >
+                  <span className="text-[10px] text-orange-500 mb-1 animate-pulse">(Click for Directions 👇)</span>
+                  <div className="flex items-center gap-2">
+                    <MapPin size={18} />
+                    <span>Poisar, Kandivali (East), Mumbai - 400101</span>
+                  </div>
+                </a>
                 <p className="text-gray-500 text-sm">Mon-Fri: 8:00 AM - 4:00 PM</p>
               </div>
               <div className="flex gap-4">
