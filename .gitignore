@@ -103,9 +103,6 @@ out
 .nuxt
 dist
 
-# Gatsby files
-.cache/
-public
 
 # vue-cli dist
 dist/
