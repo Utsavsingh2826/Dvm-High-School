@@ -1,7 +1,7 @@
 {
   "name": "dvm-high-school",
   "version": "1.0.0",
-  "description": "DVM High School Website - Quality Education for All-Round Development",
+  "description": "D.V.M High School & Jr. College Website - Quality Education for All-Round Development",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

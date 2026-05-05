@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Trophy, Palette, Music, Dumbbell, Microscope, Globe } from 'lucide-react';
+import Lightbox from './Lightbox';
 
 const activities = [
   {
@@ -33,7 +34,7 @@ const activities = [
   },
   {
     title: "Drawing Competition",
-    description: "Expressing creativity through colors and imagination in our annual art festivals.",
+    description: "Expressing creativity through colors and imagination in various annual art festivals.",
     icon: Palette,
     image: "/Drawing.png",
     color: "bg-purple-100 text-purple-600"
@@ -48,6 +49,8 @@ const activities = [
 ];
 
 function Activities() {
+  const [active, setActive] = useState(null);
+
   return (
     <section id="activities" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -68,22 +71,29 @@ function Activities() {
               className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
               {/* Image Section */}
-              <div className="h-64 bg-gray-200 relative overflow-hidden">
-                {activity.image ? (
-                  <img 
-                    src={activity.image} 
-                    alt={activity.title} 
+              {activity.image ? (
+                <button
+                  type="button"
+                  onClick={() => setActive(activity)}
+                  aria-label={`View ${activity.title}`}
+                  className="h-64 bg-gray-200 relative overflow-hidden block w-full cursor-pointer focus:outline-none focus:ring-4 focus:ring-orange-500/50"
+                >
+                  <img
+                    src={activity.image}
+                    alt={activity.title}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                ) : (
+                  <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
+                </button>
+              ) : (
+                <div className="h-64 bg-gray-200 relative overflow-hidden">
                   <div className="flex flex-col items-center justify-center h-full text-gray-400">
                     <activity.icon className="w-12 h-12 mb-2" />
                     <span className="text-sm font-medium">Image Placeholder</span>
                   </div>
-                )}
-                <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-blue-900/0 transition-colors duration-300"></div>
-              </div>
+                </div>
+              )}
               {/* Content Section */}
               <div className="p-8 text-center flex flex-col items-center">
                 <div className={`w-12 h-12 ${activity.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -106,7 +116,7 @@ function Activities() {
           
           <h3 className="text-3xl md:text-4xl font-bold mb-6 relative z-10">Want to see more?</h3>
           <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto relative z-10">
-            Follow our social media channels to stay updated with the latest events and achievements at DVM High School.
+            Follow our social media channels to stay updated with the latest events and achievements at D.V.M High School & Jr. College.
           </p>
           <div className="flex flex-wrap justify-center gap-4 relative z-10">
             <Link 
@@ -124,6 +134,13 @@ function Activities() {
           </div>
         </div>
       </div>
+
+      <Lightbox
+        image={active?.image}
+        alt={active?.title}
+        caption={active?.title}
+        onClose={() => setActive(null)}
+      />
     </section>
   );
 }

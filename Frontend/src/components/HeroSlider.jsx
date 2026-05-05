@@ -4,43 +4,43 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const slides = [
   {
     id: 1,
-    image: '/Screenshot 2026-04-28 122735.png',
+    image: '/ScienceExhibition2.png',
     title: 'Experienced Teachers, Quality Education',
     subtitle: 'Our commitment is to the all-round development and bright future of every child.',
     cta: 'Meet Our Team',
   },
   {
     id: 2,
-    image: '/Screenshot 2026-04-28 122912.png',
+    image: '/Science exhibition.png',
     title: 'Special Focus on Math, English & Science',
     subtitle: 'Excellence in academics with personalized attention and modern teaching methods.',
     cta: 'Learn More',
   },
   {
     id: 3,
-    image: '/Screenshot 2026-04-28 122958.png',
+    image: '/Culturalfeastdandiya - Copy.png',
     title: 'All-Round Development',
     subtitle: 'Nurturing minds, building character, and preparing leaders for tomorrow.',
     cta: 'Explore Courses',
   },
   {
     id: 4,
-    image: '/Screenshot 2026-04-28 122958 - Copy.png',
+    image: '/Drawing.png',
     title: 'A Place of Learning & Growth',
     subtitle: 'We believe every student has the potential to achieve great things with the right guidance.',
     cta: 'Know More',
   },
   {
     id: 5,
-    image: '/Screenshot 2026-04-28 123012 - Copy.png',
-    title: 'Building Tomorrow\'s Leaders Today',
+    image: '/Sports.png',
+    title: 'Building Future Leaders Today',
     subtitle: 'Join our vibrant school community where every child is valued, supported and inspired.',
     cta: 'Schedule Visit',
   },
   {
     id: 6,
-    image: '/image.png',
-    title: 'Welcome to DVM High School',
+    image: '/Picnic1.png',
+    title: 'Welcome to D.V.M High School & Jr. College',
     subtitle: 'A legacy of academic excellence, values, and holistic student development.',
     cta: 'Discover More',
   },
@@ -135,7 +135,7 @@ export default function HeroSlider() {
                   }}>
                     <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#fb923c', display: 'inline-block' }} />
                     <span style={{ color: '#fed7aa', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                      Welcome to DVM High School
+                      Welcome to D.V.M High School & Jr. College
                     </span>
                   </div>
 
@@ -178,7 +178,7 @@ export default function HeroSlider() {
                     transition: 'opacity 0.8s ease 0.9s, transform 0.8s ease 0.9s',
                   }}>
                     <a
-                      href={slide.id === 5 ? "https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." : (slide.cta.includes('Courses') ? '#courses' : '#about')}
+                      href={slide.id === 5 ? "https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M%20High%20School%20%26%20Jr.%20College." : (slide.cta.includes('Courses') ? '#courses' : '#about')}
                       target={slide.id === 5 ? "_blank" : undefined}
                       rel={slide.id === 5 ? "noopener noreferrer" : undefined}
                       style={{
@@ -199,7 +199,7 @@ export default function HeroSlider() {
                       {slide.cta}
                     </a>
                     <a
-                      href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20DVM%20High%20School."
+                      href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M%20High%20School%20%26%20Jr.%20College."
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{

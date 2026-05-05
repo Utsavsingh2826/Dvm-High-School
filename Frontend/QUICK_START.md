@@ -1,11 +1,11 @@
-# 🚀 Quick Start Guide - DVM High School Website
+# 🚀 Quick Start Guide - D.V.M High School & Jr. College Website
 
 ## Installation (5 minutes)
 
 ### Step 1: Open in VS Code
 ```bash
 # Navigate to Frontend folder
-cd "c:\Users\HP\Desktop\DVM HIGH SCHOOL\Frontend"
+cd "c:\Users\HP\Desktop\D.V.M. HIGH SCHOOL\Frontend"
 ```
 
 ### Step 2: Install Dependencies
@@ -104,7 +104,7 @@ colors: {
 📁 **File:** `src/utils/seoConfig.js`
 ```javascript
 export const SEO_CONFIG = {
-  siteName: "DVM High School",
+  siteName: "D.V.M High School & Jr. College",
   description: "Your description",
   keywords: ["Your", "Keywords"],
   contact: {
@@ -319,4 +319,4 @@ npm install
 
 For questions, check the detailed docs or visit the source files.
 
-*DVM High School Website - Built with excellence for excellence*
+*D.V.M High School & Jr. College Website - Built with excellence for excellence*

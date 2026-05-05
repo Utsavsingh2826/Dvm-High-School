@@ -6,7 +6,7 @@ function Testimonials() {
     {
       name: "Raj Kumar",
       role: "Student",
-      text: "DVM High School changed my life! The teachers are incredibly supportive and the personalized attention helped me improve my grades significantly.",
+      text: "D.V.M High School & Jr. College changed my life! The teachers are incredibly supportive and the personalized attention helped me improve my grades significantly.",
       rating: 5
     },
     {
@@ -35,7 +35,7 @@ function Testimonials() {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">What People Say</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Real stories from our students and parents about their experience at DVM High School
+            Real stories from our students and parents about their experience at D.V.M High School & Jr. College
           </p>
         </div>
 

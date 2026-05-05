@@ -56,28 +56,28 @@ function Navbar({ onOpenForm }) {
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/Dvmlogo.png" alt="DVM Logo" className="w-12 h-12 object-contain" />
+              <img src="/Dvmlogo.png" alt="D.V.M. Logo" className="w-12 h-12 object-contain" />
             </Link>
             <Link to="/" className="hidden sm:block">
-              <h1 className="text-lg font-bold text-blue-900 leading-tight">DVM HIGH SCHOOL</h1>
-              <p className="text-[10px] text-gray-600 uppercase tracking-widest font-semibold">Excellence in Education</p>
+              <h1 className="text-xs xl:text-sm 2xl:text-base font-bold text-blue-900 leading-tight whitespace-nowrap">D.V.M HIGH SCHOOL & JR. COLLEGE</h1>
+              <p className="text-[9px] xl:text-[10px] text-gray-600 uppercase tracking-widest font-semibold whitespace-nowrap">Excellence in Education</p>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-8">
-            <Link to="/" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Home</Link>
-            <a href="/#about" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">About</a>
-            <a href="/#courses" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Courses</a>
-            <Link to="/activities" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Activities</Link>
-            <Link to="/social-work" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Social Work</Link>
-            <Link to="/achievers" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Achievers</Link>
-            <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20DVM%20High%20School." target="_blank" rel="noopener noreferrer" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors">Contact Us</a>
+          <div className="hidden lg:flex items-center gap-3 xl:gap-6 2xl:gap-8">
+            <Link to="/" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Home</Link>
+            <a href="/#about" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">About</a>
+            <a href="/#courses" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Courses</a>
+            <Link to="/activities" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Activities</Link>
+            <Link to="/social-work" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Social Work</Link>
+            <Link to="/achievers" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Achievers</Link>
+            <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M%20High%20School%20%26%20Jr.%20College." target="_blank" rel="noopener noreferrer" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Contact Us</a>
             <a 
-              href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." 
+              href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M%20High%20School%20%26%20Jr.%20College." 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 xl:px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all whitespace-nowrap text-sm xl:text-base"
             >
               Schedule Visit
             </a>
@@ -102,9 +102,9 @@ function Navbar({ onOpenForm }) {
               <Link to="/activities" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Activities</Link>
               <Link to="/social-work" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Social Work</Link>
               <Link to="/achievers" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Achievers</Link>
-              <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20DVM%20High%20School." target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Contact Us</a>
+              <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M%20High%20School%20%26%20Jr.%20College." target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Contact Us</a>
               <a 
-                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." 
+                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M%20High%20School%20%26%20Jr.%20College." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg font-semibold w-full mt-2 text-center"

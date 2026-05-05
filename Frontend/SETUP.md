@@ -1,8 +1,8 @@
-# DVM High School - Development Guide
+# D.V.M High School & Jr. College - Development Guide
 
 ## Getting Started
 
-This is a professional, SEO-optimized website for DVM High School built with React.js.
+This is a professional, SEO-optimized website for D.V.M High School & Jr. College built with React.js.
 
 ### Quick Start
 
@@ -35,7 +35,7 @@ http://localhost:3000
 3. **About** - School overview with statistics
 4. **Features** - Four key offerings
 5. **Courses** - Subject-specific course cards
-6. **WhyChooseUs** - Reasons to choose DVM
+6. **WhyChooseUs** - Reasons to choose D.V.M.
 7. **Testimonials** - Student/parent reviews
 8. **Footer** - Contact and newsletter signup
 

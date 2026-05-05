@@ -1,7 +1,7 @@
-# DVM High School Website
+# D.V.M High School & Jr. College Website
 
 ## Project Overview
-A modern, SEO-optimized website for DVM High School located in Kandivali, Poisar, Mumbai. Built with React.js with a focus on responsive design, image optimization, and search engine optimization.
+A modern, SEO-optimized website for D.V.M High School & Jr. College located in Kandivali, Poisar, Mumbai. Built with React.js with a focus on responsive design, image optimization, and search engine optimization.
 
 ## Features
 
@@ -171,7 +171,7 @@ Target scores:
 
 ## Contact Information
 
-**DVM High School**
+**D.V.M High School & Jr. College**
 - Phone: +91 123 456 789
 - Email: info@dvmhighschool.com
 - Location: Kandivali, Poisar, Mumbai - 400067
@@ -179,7 +179,7 @@ Target scores:
 
 ## License
 
-All rights reserved © 2024 DVM High School
+All rights reserved © 2024 D.V.M High School & Jr. College
 
 ---
 

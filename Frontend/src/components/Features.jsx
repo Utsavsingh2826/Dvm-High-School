@@ -31,7 +31,7 @@ function Features() {
     {
       icon: Heart,
       title: "Counselling Sessions",
-      description: "Professional counselling available for both parents and children for holistic support."
+      description: "Personalized counselling available for both parents and children for holistic support."
     },
     {
       icon: CreditCard,

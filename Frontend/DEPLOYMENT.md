@@ -1,4 +1,4 @@
-# DVM High School - Deployment Guide
+# D.V.M High School & Jr. College - Deployment Guide
 
 ## Pre-Deployment Checklist
 

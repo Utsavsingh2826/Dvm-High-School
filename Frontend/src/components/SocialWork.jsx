@@ -11,28 +11,28 @@ const socialWorks = [
   },
   {
     title: "Covid Relief Camp (2020)",
-    description: "During the challenging times of the pandemic, DVM transformed into a community support hub. We organized awareness drives, distributed sanitation kits, and provided essential supplies to local families in Poisar.",
+    description: "During the challenging times of the pandemic, D.V.M. transformed into a community support hub. We organized awareness drives and provided essential supplies to local families participating in the camp.",
     icon: Activity,
     color: "from-red-500 to-rose-600",
-    impact: "500+ Families Supported"
+    impact: "12000+ Families Supported"
   },
   {
     title: "Aadhar Camp (2025)",
-    description: "Recognizing the importance of documentation for government benefits, we host regular Aadhar registration and update camps. This service is open to all students and their families to ensure they stay connected with official services.",
+    description: "Recognizing the importance of documentation for government benefits, we hosted Aadhar registration and update camps. This service is open to all students and their families to ensure they stay connected with official services.",
     icon: HelpingHand,
     color: "from-orange-500 to-amber-600",
     impact: "Community Service"
   },
   {
-    title: "Hindi Medium Support",
-    description: "We are deeply committed to the Hindi medium curriculum, providing special resources, free coaching, and dedicated mentorship programs to ensure these students excel at par with any other medium.",
+    title: "Hindi Medium Full Free Education",
+    description: "Every student enrolled in our Hindi medium section receives 100% free education — covering tuition fees, books, uniforms, and learning materials. Our mission is to ensure that no child is denied quality education because of language or financial background, and that Hindi medium students are equipped with every resource needed to excel.",
     icon: BookCopy,
     color: "from-emerald-500 to-teal-600",
-    impact: "Dedicated Support"
+    impact: "100% Free Education"
   },
   {
     title: "Free Book Distribution",
-    description: "Every academic year begins with our stationery drive. We distribute complete book sets, notebooks, and writing materials to students from economically weaker sections to ensure a confident start to their studies.",
+    description: "Every academic year begins with our stationery drive. We distribute complete workbook sets to students from economically weaker sections to ensure a confident start to their studies.",
     icon: Heart,
     color: "from-pink-500 to-purple-600",
     impact: "Annual Initiative"
@@ -54,7 +54,7 @@ function SocialWork() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Social Initiatives</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Education is a tool for social change. At DVM High School, our responsibility extends beyond the classroom walls and into the heart of our community.
+            Education is a tool for social change. At D.V.M High School & Jr. College, our responsibility extends beyond the classroom walls and into the heart of our community.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ function SocialWork() {
               </p>
               <div className="mt-6 flex items-center gap-4">
                 <div className="w-12 h-1 bg-orange-500 rounded-full"></div>
-                <span className="font-bold text-blue-900 uppercase tracking-widest text-sm">Somvanshi Trust</span>
+                <span className="font-bold text-blue-900 uppercase tracking-widest text-sm">Somvanshi Shaikshanik Sansthan</span>
               </div>
             </div>
             

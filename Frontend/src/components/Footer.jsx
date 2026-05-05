@@ -12,7 +12,7 @@ function Footer({ onOpenForm }) {
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Child's Future?</h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Join hundreds of students who are already experiencing excellence in education at DVM High School.
+            Join hundreds of students who are already experiencing excellence in education at D.V.M High School & Jr. College.
           </p>
           <button 
             onClick={onOpenForm}
@@ -30,11 +30,9 @@ function Footer({ onOpenForm }) {
             {/* About */}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center font-bold">
-                  DVM
-                </div>
+                <img src="/Dvmlogo.png" alt="D.V.M Logo" className="w-12 h-12 object-contain bg-white rounded-lg p-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold">DVM High School</h3>
+                  <h3 className="font-bold leading-tight">D.V.M High School &amp; Jr. College</h3>
                   <p className="text-xs text-gray-300">Excellence in Education</p>
                 </div>
               </div>
@@ -109,7 +107,7 @@ function Footer({ onOpenForm }) {
                     <span>Poisar, Kandivali (East), Mumbai - 400101</span>
                   </div>
                 </a>
-                <p className="text-gray-500 text-sm">Mon-Fri: 8:00 AM - 4:00 PM</p>
+                <p className="text-gray-500 text-sm">Mon-Sat: 10:00 AM - 6:00 PM</p>
               </div>
               <div className="flex gap-4">
                 <a href="https://www.instagram.com/dvm.highschoolofficials?igsh=NHE0cXg5N2RmdGh1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-orange-500 rounded-full flex items-center justify-center transition-all">
@@ -125,7 +123,7 @@ function Footer({ onOpenForm }) {
           {/* Bottom Bar */}
           <div className="border-t border-white/20 pt-8 mt-8">
             <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-              <p>&copy; 2024 DVM High School. All rights reserved.</p>
+              <p>&copy; 2024 D.V.M High School & Jr. College. All rights reserved.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
                 <a href="#" className="hover:text-orange-500 transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-orange-500 transition-colors">Terms & Conditions</a>

@@ -107,7 +107,7 @@ function CounselingForm({ isOpen, onClose }) {
             <div className="space-y-2 md:col-span-2">
               <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                 <MessageSquare size={16} className="text-orange-500" />
-                Why do you want to join DVM High School?
+                Why do you want to join D.V.M High School & Jr. College?
               </label>
               <textarea
                 name="whyJoin"

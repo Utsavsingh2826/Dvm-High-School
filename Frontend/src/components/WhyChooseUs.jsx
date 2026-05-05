@@ -10,8 +10,8 @@ function WhyChooseUs() {
     },
     {
       icon: Users,
-      title: "Small Class Sizes",
-      description: "Limited students per class ensure individual attention and personalized feedback from our expert faculty."
+      title: "Interactive Learning",
+      description: "Interactive learning methods ensure individual attention and personalized feedback from our expert faculty."
     },
     {
       icon: Smile,
@@ -56,7 +56,7 @@ function WhyChooseUs() {
                 </li>
               </ul>
               <a 
-                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20DVM%20High%20School." 
+                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M%20High%20School%20%26%20Jr.%20College." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-bold transition-all text-center"
@@ -69,7 +69,7 @@ function WhyChooseUs() {
           {/* Right - Reasons Grid */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-8 animate-slide-up">
-              Why Choose DVM?
+              Why Choose D.V.M.?
             </h2>
             {reasons.map((reason, index) => (
               <div

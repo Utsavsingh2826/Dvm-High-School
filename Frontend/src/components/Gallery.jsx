@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ImageIcon } from 'lucide-react';
+import Lightbox from './Lightbox';
 
 const galleryImages = [
   // Sports Day
@@ -23,8 +24,6 @@ const galleryImages = [
   
   // Drawing Competition
   { src: "/Drawing.png", category: "Drawing Competition", title: "Art Festival" },
-  { src: "/Drawing1.png", category: "Drawing Competition", title: "Coloring Session" },
-  { src: "/Drawing2.png", category: "Drawing Competition", title: "Creative Expressions" },
   
   // Cultural Feast
   { src: "/Culturalfeastdandiya - Copy.png", category: "Cultural Feast", title: "Dandiya Celebration" },
@@ -34,6 +33,8 @@ const galleryImages = [
 ];
 
 function Gallery() {
+  const [active, setActive] = useState(null);
+
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -43,19 +44,22 @@ function Gallery() {
           </h2>
           <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A glimpse into the vibrant life at DVM High School through captured moments of joy, learning, and achievement.
+            A glimpse into the vibrant life at D.V.M High School & Jr. College through captured moments of joy, learning, and achievement.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {galleryImages.map((image, idx) => (
-            <div 
-              key={idx} 
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 aspect-square"
+            <button
+              type="button"
+              key={idx}
+              onClick={() => setActive(image)}
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 aspect-square cursor-pointer text-left focus:outline-none focus:ring-4 focus:ring-orange-500/50"
+              aria-label={`View ${image.title}`}
             >
-              <img 
-                src={image.src} 
-                alt={image.title} 
+              <img
+                src={image.src}
+                alt={image.title}
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -66,10 +70,17 @@ function Gallery() {
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <ImageIcon className="text-white w-5 h-5" />
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
+
+      <Lightbox
+        image={active?.src}
+        alt={active?.title}
+        caption={active ? `${active.category} — ${active.title}` : ''}
+        onClose={() => setActive(null)}
+      />
     </section>
   );
 }
