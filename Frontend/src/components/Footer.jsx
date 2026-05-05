@@ -70,13 +70,28 @@ function Footer({ onOpenForm }) {
             <div>
               <h3 className="font-bold text-lg mb-6">Contact Us</h3>
               <div className="space-y-4 text-sm text-gray-400">
-                <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.open('https://wa.me/919022081772', '_blank')}>
-                  <div className="w-10 h-10 bg-white/5 group-hover:bg-green-500/20 rounded-full flex items-center justify-center transition-all">
+                <div className="flex items-start gap-3 group">
+                  <div className="w-10 h-10 bg-white/5 group-hover:bg-green-500/20 rounded-full flex items-center justify-center transition-all flex-shrink-0">
                     <Phone size={18} className="group-hover:text-green-500" />
                   </div>
                   <div>
                     <p className="text-white font-medium">Call / WhatsApp</p>
-                    <p>+91 9022081772</p>
+                    <a
+                      href="https://wa.me/919022081772"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:text-green-400 transition-colors"
+                    >
+                      +91 9022081772
+                    </a>
+                    <a
+                      href="https://wa.me/919820745556"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:text-green-400 transition-colors"
+                    >
+                      +91 9820745556
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
