@@ -3,6 +3,31 @@ import { ImageIcon } from 'lucide-react';
 import Lightbox from './Lightbox';
 
 const galleryImages = [
+  // Annual Day 2024
+  { src: "/anuualfunction/Screenshot 2026-05-06 153943.png", category: "Annual Day 2024", title: "Cultural Performance" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154031.png", category: "Annual Day 2024", title: "Stage Drama" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154119.png", category: "Annual Day 2024", title: "Student Achievement" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154503.png", category: "Annual Day 2024", title: "Traditional Dance" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154522.png", category: "Annual Day 2024", title: "Musical Event" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154542.png", category: "Annual Day 2024", title: "Group Performance" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154556.png", category: "Annual Day 2024", title: "Celebration Moment" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154612.png", category: "Annual Day 2024", title: "School Spirit" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154627.png", category: "Annual Day 2024", title: "Prize Ceremony" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154641.png", category: "Annual Day 2024", title: "Award Distribution" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154707.png", category: "Annual Day 2024", title: "Talent Showcase" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154725.png", category: "Annual Day 2024", title: "On Stage" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154753.png", category: "Annual Day 2024", title: "Special Performance" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154832.png", category: "Annual Day 2024", title: "Folk Dance" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154854.png", category: "Annual Day 2024", title: "Cultural Event" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 154941.png", category: "Annual Day 2024", title: "Annual Day Memories" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155111.png", category: "Annual Day 2024", title: "Spectacular Show" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155130.png", category: "Annual Day 2024", title: "Student Talent" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155151.png", category: "Annual Day 2024", title: "Grand Finale" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155205.png", category: "Annual Day 2024", title: "Closing Ceremony" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155224.png", category: "Annual Day 2024", title: "Memorable Evening" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155244.png", category: "Annual Day 2024", title: "Colorful Display" },
+  { src: "/anuualfunction/Screenshot 2026-05-06 155303.png", category: "Annual Day 2024", title: "School Community" },
+
   // Sports Day
   { src: "/Sports.png", category: "Sports Day", title: "Athletics Event" },
   { src: "/Sports1.png", category: "Sports Day", title: "Team Activity" },
@@ -13,8 +38,8 @@ const galleryImages = [
   { src: "/ScienceExhibition2.png", category: "Science Exhibition", title: "Student Presentations" },
   
   // School Picnic
-  { src: "/Picnic.png", category: "School Picnic", title: "Fun at the Park" },
-  { src: "/Picnic1.png", category: "School Picnic", title: "Group Photo" },
+  { src: "/Picnic1.png", category: "School Picnic", title: "Fun at the Park" },
+  { src: "/Picnic.png", category: "School Picnic", title: "Group Photo" },
   { src: "/Picnic2.png", category: "School Picnic", title: "Outdoor Games" },
   
   // Idol Making

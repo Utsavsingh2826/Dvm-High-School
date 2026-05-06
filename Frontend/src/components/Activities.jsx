@@ -22,7 +22,7 @@ const activities = [
     title: "School Picnic",
     description: "Educational and fun-filled outdoor trips to explore new places and bond with classmates.",
     icon: Globe,
-    image: "/Picnic.png",
+    image: "/Picnic1.png",
     color: "bg-red-100 text-red-600"
   },
   {
