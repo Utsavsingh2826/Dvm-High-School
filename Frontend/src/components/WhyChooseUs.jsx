@@ -56,7 +56,7 @@ function WhyChooseUs() {
                 </li>
               </ul>
               <a 
-                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M%20High%20School%20%26%20Jr.%20College." 
+                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M.%20High%20School%20%26%20Jr.%20College." 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="mt-8 inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-bold transition-all text-center"

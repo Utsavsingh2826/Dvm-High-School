@@ -116,7 +116,7 @@ function Activities() {
           
           <h3 className="text-3xl md:text-4xl font-bold mb-6 relative z-10">Want to see more?</h3>
           <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto relative z-10">
-            Follow our social media channels to stay updated with the latest events and achievements at D.V.M High School & Jr. College.
+            Follow our social media channels to stay updated with the latest events and achievements at D.V.M. High School & Jr. College.
           </p>
           <div className="flex flex-wrap justify-center gap-4 relative z-10">
             <Link 

@@ -44,7 +44,7 @@ function Gallery() {
           </h2>
           <div className="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A glimpse into the vibrant life at D.V.M High School & Jr. College through captured moments of joy, learning, and achievement.
+            A glimpse into the vibrant life at D.V.M. High School & Jr. College through captured moments of joy, learning, and achievement.
           </p>
         </div>
 

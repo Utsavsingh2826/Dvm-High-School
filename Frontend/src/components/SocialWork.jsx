@@ -4,10 +4,10 @@ import { Heart, HelpingHand, Activity, BookCopy, GraduationCap, Quote, Star, Use
 const socialWorks = [
   {
     title: "Free Education for Needy",
-    description: "Our primary mission is to ensure that financial constraints never stand in the way of a child's right to learn. We identify talented yet underprivileged students and provide them with full scholarships, covering everything from fees to uniforms.",
+    description: "Our primary mission is to ensure that financial constraints never stand in the way of a child's right to learn. We identify talented yet underprivileged students and provide them with scholarships.",
     icon: GraduationCap,
     color: "from-blue-500 to-indigo-600",
-    impact: "100+ Students Helped"
+    impact: "500+ Students Helped"
   },
   {
     title: "Covid Relief Camp (2020)",
@@ -18,14 +18,14 @@ const socialWorks = [
   },
   {
     title: "Aadhar Camp (2025)",
-    description: "Recognizing the importance of documentation for government benefits, we hosted Aadhar registration and update camps. This service is open to all students and their families to ensure they stay connected with official services.",
+    description: "Recognizing the importance of documentation for government benefits, we hosted Aadhar registration and update camps. This service was open to all students and their families to ensure they stay connected with official services.",
     icon: HelpingHand,
     color: "from-orange-500 to-amber-600",
     impact: "Community Service"
   },
   {
     title: "Hindi Medium Full Free Education",
-    description: "Every student enrolled in our Hindi medium section receives 100% free education — covering tuition fees, books, uniforms, and learning materials. Our mission is to ensure that no child is denied quality education because of language or financial background, and that Hindi medium students are equipped with every resource needed to excel.",
+    description: "Every student enrolled in our Hindi medium section receives 100% free education. Our mission is to ensure that no child is denied quality education because of language or financial background, and that Hindi medium students are equipped with every resource needed to excel.",
     icon: BookCopy,
     color: "from-emerald-500 to-teal-600",
     impact: "100% Free Education"
@@ -54,7 +54,7 @@ function SocialWork() {
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">Social Initiatives</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Education is a tool for social change. At D.V.M High School & Jr. College, our responsibility extends beyond the classroom walls and into the heart of our community.
+            Education is a tool for social change. At D.V.M. High School & Jr. College, our responsibility extends beyond the classroom walls and into the heart of our community.
           </p>
         </div>
       </section>

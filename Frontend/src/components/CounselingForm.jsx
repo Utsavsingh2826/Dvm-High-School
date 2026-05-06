@@ -1,8 +1,42 @@
 import React, { useState } from 'react';
-import { X, Send, User, GraduationCap, BookOpen, Phone, MessageSquare, Info } from 'lucide-react';
+import { X, Send, User, GraduationCap, BookOpen, Phone, MessageSquare } from 'lucide-react';
 
 function CounselingForm({ isOpen, onClose }) {
+  const [formData, setFormData] = useState({
+    studentName: '',
+    standard: '',
+    pastEducation: '',
+    contactNo: '',
+    whyJoin: ''
+  });
+
   if (!isOpen) return null;
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const message = `Hello D.V.M. High School & Jr. College,
+
+I would like to apply for counseling/admission. Here are the details:
+
+*Student Name:* ${formData.studentName}
+*Standard/Grade:* ${formData.standard}
+*Past Education:* ${formData.pastEducation || 'Not provided'}
+*Contact Number:* ${formData.contactNo || 'Not provided'}
+*Reason for Joining:* ${formData.whyJoin || 'Not provided'}
+
+Looking forward to your response.`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/919022081772?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+    onClose();
+  };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
@@ -23,8 +57,7 @@ function CounselingForm({ isOpen, onClose }) {
 
         {/* Form */}
         <form 
-          action="https://formspree.io/f/xvgzlowz" // Note: User needs to replace this with their unique Formspree ID or I can use mailto
-          method="POST"
+          onSubmit={handleSubmit}
           className="p-8 space-y-6"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -32,11 +65,13 @@ function CounselingForm({ isOpen, onClose }) {
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                 <User size={16} className="text-orange-500" />
-                Student Name
+                Student Name *
               </label>
               <input
                 type="text"
                 name="studentName"
+                value={formData.studentName}
+                onChange={handleChange}
                 placeholder="Full Name"
                 required
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
@@ -47,11 +82,13 @@ function CounselingForm({ isOpen, onClose }) {
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                 <GraduationCap size={16} className="text-orange-500" />
-                Standard / Grade
+                Standard / Grade *
               </label>
               <input
                 type="text"
                 name="standard"
+                value={formData.standard}
+                onChange={handleChange}
                 placeholder="e.g. 10th Standard"
                 required
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
@@ -67,29 +104,15 @@ function CounselingForm({ isOpen, onClose }) {
               <input
                 type="text"
                 name="pastEducation"
+                value={formData.pastEducation}
+                onChange={handleChange}
                 placeholder="Previous School / Marks"
-                required
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
-              />
-            </div>
-
-            {/* Subject */}
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                <BookOpen size={16} className="text-orange-500" />
-                Interested Subjects
-              </label>
-              <input
-                type="text"
-                name="subject"
-                placeholder="e.g. Science, Maths"
-                required
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
               />
             </div>
 
             {/* Contact Number */}
-            <div className="space-y-2 md:col-span-2">
+            <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                 <Phone size={16} className="text-orange-500" />
                 Contact Number
@@ -97,8 +120,9 @@ function CounselingForm({ isOpen, onClose }) {
               <input
                 type="tel"
                 name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
                 placeholder="+91 XXXXX XXXXX"
-                required
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
               />
             </div>
@@ -107,27 +131,14 @@ function CounselingForm({ isOpen, onClose }) {
             <div className="space-y-2 md:col-span-2">
               <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                 <MessageSquare size={16} className="text-orange-500" />
-                Why do you want to join D.V.M High School & Jr. College?
+                Why do you want to join D.V.M. High School & Jr. College?
               </label>
               <textarea
                 name="whyJoin"
+                value={formData.whyJoin}
+                onChange={handleChange}
                 rows="3"
                 placeholder="Tell us about your goals..."
-                required
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all resize-none"
-              ></textarea>
-            </div>
-
-            {/* Necessary Details */}
-            <div className="space-y-2 md:col-span-2">
-              <label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                <Info size={16} className="text-orange-500" />
-                Other Necessary Details
-              </label>
-              <textarea
-                name="additionalDetails"
-                rows="2"
-                placeholder="Any other information we should know?"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all resize-none"
               ></textarea>
             </div>
@@ -135,14 +146,14 @@ function CounselingForm({ isOpen, onClose }) {
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-3 group"
+            className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-green-500/30 transition-all flex items-center justify-center gap-3 group"
           >
-            Submit Application
+            Apply via WhatsApp
             <Send size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </button>
           
           <p className="text-center text-xs text-gray-400 mt-4">
-            Your data is secure. We will contact you within 24 hours.
+            * Mandatory fields. We will contact you on WhatsApp.
           </p>
         </form>
       </div>

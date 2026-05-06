@@ -1,16 +1,16 @@
 // SEO Metadata Configuration
 
 export const SEO_CONFIG = {
-  siteName: "D.V.M High School & Jr. College",
+  siteName: "D.V.M. High School & Jr. College",
   siteUrl: "https://dvmhighschool.com",
   logo: "https://dvmhighschool.com/logo.png",
-  description: "D.V.M High School & Jr. College - Quality Education with Experienced Teachers in Kandivali, Poisar, Mumbai",
+  description: "D.V.M. High School & Jr. College - Quality Education with Experienced Teachers in Kandivali, Poisar, Mumbai",
   keywords: [
     "high school in Kandivali",
     "school in Poisar",
     "quality education Mumbai",
     "CBSE school",
-    "D.V.M High School & Jr. College",
+    "D.V.M. High School & Jr. College",
     "experienced teachers"
   ],
   defaultImage: "https://dvmhighschool.com/og-image.png",

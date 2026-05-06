@@ -9,10 +9,10 @@ function About() {
           {/* Left Content */}
           <div className="animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-              About D.V.M High School & Jr. College
+              About D.V.M. High School & Jr. College
             </h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Located in the heart of Kandivali, Poisar, D.V.M High School & Jr. College stands as a beacon of educational excellence. With a commitment to nurturing young minds and fostering all-round development, we have been transforming lives for years.
+              Located in the heart of Kandivali, Poisar, D.V.M. High School & Jr. College stands as a beacon of educational excellence. With a commitment to nurturing young minds and fostering all-round development, we have been transforming lives for years.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Our experienced team of educators brings decades of combined expertise in Math, English, and Science education. We believe in creating an environment where every student can thrive academically and personally.
@@ -28,19 +28,19 @@ function About() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-                <p className="text-3xl font-bold text-blue-900">500+</p>
+                <p className="text-3xl font-bold text-blue-900">2000+</p>
                 <p className="text-gray-600 mt-2">Happy Students</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-                <p className="text-3xl font-bold text-blue-900">35+</p>
-                <p className="text-gray-600 mt-2">Experienced Teachers</p>
+                <p className="text-3xl font-bold text-blue-900">50+</p>
+                <p className="text-gray-600 mt-2">Experienced Staff</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
                 <p className="text-3xl font-bold text-blue-900">95%</p>
                 <p className="text-gray-600 mt-2">Success Rate</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-                <p className="text-3xl font-bold text-blue-900">15+</p>
+                <p className="text-3xl font-bold text-blue-900">18+</p>
                 <p className="text-gray-600 mt-2">Years Legacy</p>
               </div>
             </div>
@@ -69,9 +69,9 @@ function About() {
                 <div className="pt-4 border-t border-gray-100">
                   <h4 className="font-bold text-orange-600 text-sm uppercase tracking-wider mb-3">Head Mistresses</h4>
                   <ul className="space-y-2 text-gray-700">
-                    <li><span className="font-semibold text-blue-900">Mrs. Sangeeta A. Singh</span> - D.V.M Hindi High School</li>
-                    <li><span className="font-semibold text-blue-900">Mrs. Jyoti P. Lalwani</span> - D.V.M High School & Jr. College</li>
-                    <li><span className="font-semibold text-blue-900">Mrs. Pratima P. Pal</span> - D.V.M Hindi School (Primary Section)</li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Sangeeta A. Singh</span> - D.V.M. Hindi High School</li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Jyoti P. Lalwani</span> - D.V.M. High School & Jr. College</li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Pratima P. Pal</span> - D.V.M. Hindi School (Primary Section)</li>
                   </ul>
                 </div>
               </div>

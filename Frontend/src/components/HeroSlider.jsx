@@ -40,7 +40,7 @@ const slides = [
   {
     id: 6,
     image: '/Picnic1.png',
-    title: 'Welcome to D.V.M High School & Jr. College',
+    title: 'Welcome to D.V.M. High School & Jr. College',
     subtitle: 'A legacy of academic excellence, values, and holistic student development.',
     cta: 'Discover More',
   },
@@ -135,7 +135,7 @@ export default function HeroSlider() {
                   }}>
                     <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#fb923c', display: 'inline-block' }} />
                     <span style={{ color: '#fed7aa', fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                      Welcome to D.V.M High School & Jr. College
+                      Welcome to D.V.M. High School & Jr. College
                     </span>
                   </div>
 
@@ -178,7 +178,7 @@ export default function HeroSlider() {
                     transition: 'opacity 0.8s ease 0.9s, transform 0.8s ease 0.9s',
                   }}>
                     <a
-                      href={slide.id === 5 ? "https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M%20High%20School%20%26%20Jr.%20College." : (slide.cta.includes('Courses') ? '#courses' : '#about')}
+                      href={slide.id === 5 ? "https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M.%20High%20School%20%26%20Jr.%20College." : (slide.cta.includes('Courses') ? '#courses' : '#about')}
                       target={slide.id === 5 ? "_blank" : undefined}
                       rel={slide.id === 5 ? "noopener noreferrer" : undefined}
                       style={{
@@ -199,7 +199,7 @@ export default function HeroSlider() {
                       {slide.cta}
                     </a>
                     <a
-                      href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M%20High%20School%20%26%20Jr.%20College."
+                      href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M.%20High%20School%20%26%20Jr.%20College."
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
