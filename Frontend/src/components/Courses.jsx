@@ -59,9 +59,7 @@ function Courses() {
                     </div>
                   ))}
                 </div>
-                <button className="mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-2 rounded-lg font-semibold hover:shadow-lg transition-all">
-                  Learn More
-                </button>
+
               </div>
             </div>
           ))}
