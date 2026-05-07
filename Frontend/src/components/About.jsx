@@ -9,7 +9,7 @@ function About() {
           {/* Left Content */}
           <div className="animate-slide-up">
             <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-              About D.V.M. High School & Jr. College
+              About D.V.M. High School & Junior College
             </h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
               Located in the heart of Kandivali, Poisar, D.V.M. High School & Jr. College stands as a beacon of educational excellence. With a commitment to nurturing young minds and fostering all-round development, we have been transforming lives for years.
@@ -69,9 +69,9 @@ function About() {
                 <div className="pt-4 border-t border-gray-100">
                   <h4 className="font-bold text-orange-600 text-sm uppercase tracking-wider mb-3">Head Mistresses</h4>
                   <ul className="space-y-2 text-gray-700">
-                    <li><span className="font-semibold text-blue-900">Mrs. Sangeeta A. Singh</span> - D.V.M. Hindi High School</li>
-                    <li><span className="font-semibold text-blue-900">Mrs. Jyoti P. Lalwani</span> - D.V.M. High School & Jr. College</li>
-                    <li><span className="font-semibold text-blue-900">Mrs. Pratima P. Pal</span> - D.V.M. Hindi School (Primary Section)</li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Sangeeta A. Singh</span> - <span className="font-bold text-blue-900">D.V.M. Hindi High School</span></li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Jyoti P. Lalwani</span> - <span className="font-bold text-blue-900">D.V.M. High School & Junior College</span></li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Pratima P. Pal</span> - <span className="font-bold text-blue-900">D.V.M. HIGH School ( Primary Section)</span></li>
                   </ul>
                 </div>
               </div>

@@ -24,11 +24,6 @@ function Features() {
       description: "Interactive and engaging teaching methods designed to make learning enjoyable and effective."
     },
     {
-      icon: Users,
-      title: "Limited Class Size",
-      description: "Small student-to-teacher ratios ensuring individual attention and better interaction."
-    },
-    {
       icon: Heart,
       title: "Counselling Sessions",
       description: "Personalized counselling available for both parents and children for holistic support."

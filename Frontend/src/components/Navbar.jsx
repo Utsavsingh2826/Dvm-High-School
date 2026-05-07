@@ -59,8 +59,8 @@ function Navbar({ onOpenForm }) {
               <img src="/Dvmlogo.png" alt="D.V.M. Logo" className="w-12 h-12 object-contain" />
             </Link>
             <Link to="/" className="hidden sm:block">
-              <h1 className="text-xs xl:text-sm 2xl:text-base font-bold text-blue-900 leading-tight whitespace-nowrap">D.V.M. HIGH SCHOOL</h1>
-              <p className="text-[9px] xl:text-[10px] text-blue-900 uppercase tracking-widest font-semibold whitespace-nowrap">D.V.M. HINDI HIGH SCHOOL</p>
+              <h1 className="text-xs xl:text-sm 2xl:text-base font-bold text-blue-900 leading-tight whitespace-nowrap">D.V.M. HIGH SCHOOL & JUNIOR COLLEGE</h1>
+              <p className="text-xs xl:text-sm 2xl:text-base font-bold text-blue-900 leading-tight whitespace-nowrap">D.V.M. HINDI HIGH SCHOOL</p>
             </Link>
           </div>
 

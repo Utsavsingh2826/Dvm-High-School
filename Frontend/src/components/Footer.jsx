@@ -32,7 +32,7 @@ function Footer({ onOpenForm }) {
               <div className="flex items-center gap-3 mb-6">
                 <img src="/Dvmlogo.png" alt="D.V.M Logo" className="w-12 h-12 object-contain bg-white rounded-lg p-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold leading-tight">D.V.M. High School &amp; Jr. College</h3>
+                  <h3 className="font-bold leading-tight">D.V.M. High School &amp; Junior College</h3>
                   <p className="text-xs text-gray-300">Excellence in Education</p>
                 </div>
               </div>

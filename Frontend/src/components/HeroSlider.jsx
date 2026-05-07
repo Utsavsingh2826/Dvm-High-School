@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const slides = [
   {
     id: 1,
-    image: '/ScienceExhibition2.png',
+    image: '/anuualfunction/Screenshot 2026-05-06 154627.png',
     title: 'Experienced Teachers, Quality Education',
     subtitle: 'Our commitment is to the all-round development and bright future of every child.',
     cta: 'Meet Our Team',

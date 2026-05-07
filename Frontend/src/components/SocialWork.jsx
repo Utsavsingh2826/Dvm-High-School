@@ -3,11 +3,11 @@ import { Heart, HelpingHand, Activity, BookCopy, GraduationCap, Quote, Star, Use
 
 const socialWorks = [
   {
-    title: "Free Education for Needy",
-    description: "Our primary mission is to ensure that financial constraints never stand in the way of a child's right to learn. We identify talented yet underprivileged students and provide them with scholarships.",
+    title: "Free Education for Needy (High School & Jr. College)",
+    description: "Our primary mission is to ensure that financial constraints never stand in the way of a child's right to learn. We identify talented yet underprivileged students and provide them with scholarships and provide them with free education.",
     icon: GraduationCap,
     color: "from-blue-500 to-indigo-600",
-    impact: "500+ Students Helped"
+    impact: "1000+ Students Helped"
   },
   {
     title: "Covid Relief Camp (2020)",
