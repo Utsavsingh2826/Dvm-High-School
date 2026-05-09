@@ -4,7 +4,7 @@ import { Heart, HelpingHand, Activity, BookCopy, GraduationCap, Quote, Star, Use
 const socialWorks = [
   {
     title: "Free Education for Needy (High School & Jr. College)",
-    description: "Our primary mission is to ensure that financial constraints never stand in the way of a child's right to learn. We identify talented yet underprivileged students and provide them with scholarships and provide them with free education.",
+    description: "Our primary mission is to ensure that financial constraints never stand in the way of a child's right to learn. We identify talented yet underprivileged students  and provide them with free education.",
     icon: GraduationCap,
     color: "from-blue-500 to-indigo-600",
     impact: "1000+ Students Helped"
@@ -46,7 +46,7 @@ function SocialWork() {
       <section className="bg-blue-900 text-white py-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full -ml-48 -mb-48 blur-3xl"></div>
-        
+
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-orange-400 text-sm font-bold mb-6 backdrop-blur-md border border-white/10">
             <Star size={16} fill="currentColor" />
@@ -76,7 +76,7 @@ function SocialWork() {
                 <span className="font-bold text-blue-900 uppercase tracking-widest text-sm">Somvanshi Shaikshanik Sansthan</span>
               </div>
             </div>
-            
+
             <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 bg-blue-50 rounded-2xl border border-blue-100">
                 <div className="flex items-center gap-3 mb-4">
@@ -106,18 +106,18 @@ function SocialWork() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {socialWorks.map((work, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="group relative bg-white p-8 md:p-12 rounded-3xl shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden"
               >
                 {/* Decorative Background Gradient Circle */}
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${work.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-full -mr-16 -mt-16`}></div>
-                
+
                 <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
                   <div className={`flex-shrink-0 w-16 h-16 bg-gradient-to-br ${work.color} rounded-2xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-500`}>
                     <work.icon size={32} />
                   </div>
-                  
+
                   <div>
                     <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-3">
                       {work.impact}
