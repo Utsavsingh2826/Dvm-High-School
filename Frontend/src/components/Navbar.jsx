@@ -35,10 +35,10 @@ function Navbar({ onOpenForm }) {
               <span>dvmhighschool2021@gmail.com</span>
             </div>
           </div>
-          <a 
-            href="https://maps.app.goo.gl/9UTeePTkGUDN6hQY6" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://maps.app.goo.gl/9UTeePTkGUDN6hQY6"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center md:items-start hover:text-orange-400 transition-colors"
           >
             <span className="text-[10px] bg-orange-500/20 px-2 py-0.5 rounded mb-1 animate-pulse">(Click for Directions 👇)</span>
@@ -73,9 +73,9 @@ function Navbar({ onOpenForm }) {
             <Link to="/social-work" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Social Work</Link>
             <Link to="/achievers" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Achievers</Link>
             <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M.%20High%20School%20%26%20Jr.%20College." target="_blank" rel="noopener noreferrer" className="nav-link text-blue-900 hover:text-orange-500 font-medium transition-colors whitespace-nowrap text-sm xl:text-base">Contact Us</a>
-            <a 
-              href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M.%20High%20School%20%26%20Jr.%20College." 
-              target="_blank" 
+            <a
+              href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M.%20High%20School%20%26%20Jr.%20College."
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 xl:px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all whitespace-nowrap text-sm xl:text-base"
             >
@@ -103,9 +103,9 @@ function Navbar({ onOpenForm }) {
               <Link to="/social-work" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Social Work</Link>
               <Link to="/achievers" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Achievers</Link>
               <a href="https://wa.me/919022081772?text=Hello,%20I%20have%20an%20inquiry%20regarding%20D.V.M.%20High%20School%20%26%20Jr.%20College." target="_blank" rel="noopener noreferrer" className="text-blue-900 hover:text-orange-500 font-medium py-2 border-b border-gray-100">Contact Us</a>
-              <a 
-                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M.%20High%20School%20%26%20Jr.%20College." 
-                target="_blank" 
+              <a
+                href="https://wa.me/919022081772?text=Hello,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20D.V.M.%20High%20School%20%26%20Jr.%20College."
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg font-semibold w-full mt-2 text-center"
               >
