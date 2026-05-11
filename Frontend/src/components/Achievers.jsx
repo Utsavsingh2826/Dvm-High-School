@@ -2,7 +2,7 @@ import React from 'react';
 import { Trophy, Crown, Download, Maximize2, Sparkles } from 'lucide-react';
 
 function Achievers() {
-  const bannerImage = "/Bannerimage.jpeg";
+  const bannerImage = "/Bannerimage1.jpeg";
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
@@ -66,7 +66,7 @@ function Achievers() {
               alt="D.V.M. High School & Jr. College Toppers 2026" 
               className="w-full h-auto block shadow-2xl transition-transform duration-700 group-hover:scale-[1.01]"
               onError={(e) => {
-                e.target.src = "https://placehold.co/1200x800/0a0f1d/amber-400?text=Banner+Image+Not+Found+(Bannerimage.jpeg)";
+                e.target.src = "https://placehold.co/1200x800/0a0f1d/amber-400?text=Banner+Image+Not+Found+(Bannerimage1.jpeg)";
               }}
             />
             
@@ -86,7 +86,7 @@ function Achievers() {
           </p>
           <div className="mt-8 flex justify-center items-center gap-4">
             <div className="h-px w-12 bg-slate-200"></div>
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-400">DVM High School & Jr. College</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-slate-400">D.V.M. High School & Jr. College</span>
             <div className="h-px w-12 bg-slate-200"></div>
           </div>
         </div>

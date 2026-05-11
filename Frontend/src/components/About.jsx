@@ -71,7 +71,7 @@ function About() {
                   <ul className="space-y-2 text-gray-700">
                     <li><span className="font-semibold text-blue-900">Mrs. Sangeeta A. Singh</span> - <span className="font-bold text-blue-900">D.V.M. Hindi High School</span></li>
                     <li><span className="font-semibold text-blue-900">Mrs. Jyoti P. Lalwani</span> - <span className="font-bold text-blue-900">D.V.M. High School & Junior College</span></li>
-                    <li><span className="font-semibold text-blue-900">Mrs. Pratima P. Pal</span> - <span className="font-bold text-blue-900">D.V.M. HIGH School ( Primary Section)</span></li>
+                    <li><span className="font-semibold text-blue-900">Mrs. Pratima P. Pal</span> - <span className="font-bold text-blue-900">D.V.M. High School ( Primary Section)</span></li>
                   </ul>
                 </div>
               </div>
