@@ -1,126 +1,101 @@
 import React from 'react';
-import { Trophy, Award, Star, GraduationCap, Crown } from 'lucide-react';
-
-const englishToppers = [
-  { name: "Topper 1", percentage: "96.40%", year: "2023-24", rank: "1st Rank", image: "/TopperEnglish.png", color: "from-yellow-400 to-yellow-600" },
-  { name: "Topper 2", percentage: "94.20%", year: "2023-24", rank: "2nd Rank", image: "/TopperEnglish (2).png", color: "from-slate-300 to-slate-400" },
-  { name: "Topper 3", percentage: "92.80%", year: "2023-24", rank: "3rd Rank", image: "/ToppersEnglish.png", color: "from-orange-400 to-orange-600" }
-];
-
-const hindiToppers = [
-  { name: "Topper 1", percentage: "93.60%", year: "2023-24", rank: "1st Rank", image: "/TopperHindi.png", color: "from-yellow-400 to-yellow-600" },
-  { name: "Topper 2", percentage: "91.40%", year: "2023-24", rank: "2nd Rank", image: "/TopperHindi (2).png", color: "from-slate-300 to-slate-400" },
-  { name: "Topper 3", percentage: "89.80%", year: "2023-24", rank: "3rd Rank", image: "/TopperHindi (3).png", color: "from-orange-400 to-orange-600" }
-];
+import { Trophy, Crown, Download, Maximize2, Sparkles } from 'lucide-react';
 
 function Achievers() {
-  const TopperCard = ({ topper, index }) => (
-    <div className="relative group">
-      <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col">
-        {/* Banner Image - Natural Height */}
-        <div className="relative w-full bg-white overflow-hidden leading-[0]">
-          <img 
-            src={topper.image} 
-            alt={topper.name} 
-            loading="lazy"
-            className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.02]"
-          />
-          
-          {/* Rank Badge - Floats on image */}
-          <div className={`absolute top-4 left-4 z-20 px-3 py-1 bg-gradient-to-r ${topper.color} rounded-full text-white text-[10px] font-black shadow-lg border border-white/20 uppercase tracking-[0.2em]`}>
-            {topper.rank}
-          </div>
-        </div>
-
-        {/* Info Bar */}
-        <div className="p-4 bg-gray-50/50 flex justify-between items-center border-t border-gray-100">
-          <div className="flex flex-col">
-            <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-none mb-1">Batch</span>
-            <span className="text-blue-900 font-black text-xs uppercase tracking-tight">{topper.year}</span>
-          </div>
-          <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${topper.color} flex items-center justify-center text-white text-sm font-black shadow-lg rotate-3 group-hover:rotate-0 transition-transform`}>
-            {index + 1}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  const bannerImage = "/Bannerimage.jpeg";
 
   return (
-    <div className="min-h-screen bg-[#f8fafc] pb-24 font-sans">
-      {/* Cinematic Hero Section */}
-      <section className="bg-[#0f172a] text-white py-32 relative overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] -translate-y-1/2"></div>
-          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-orange-600/10 rounded-full blur-[120px] translate-y-1/2"></div>
-        </div>
+    <div className="min-h-screen bg-slate-50 font-sans">
+      {/* Premium Hero Section */}
+      <section className="relative bg-[#0a0f1d] text-white py-24 md:py-32 overflow-hidden">
+        {/* Animated Background Orbs */}
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-blue-600/20 rounded-full blur-[150px] animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-amber-600/10 rounded-full blur-[150px] animate-pulse delay-700"></div>
         
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <div className="inline-flex items-center gap-3 bg-white/5 px-6 py-2.5 rounded-full text-yellow-500 text-sm font-bold mb-8 backdrop-blur-xl border border-white/10 shadow-2xl">
-            <Crown size={18} className="animate-pulse" />
-            <span className="tracking-[0.3em] uppercase">The President's Honor Roll</span>
+          <div className="inline-flex items-center gap-3 bg-white/10 px-6 py-2 rounded-full text-amber-400 text-sm font-bold mb-8 backdrop-blur-md border border-white/20 shadow-2xl">
+            <Trophy size={18} className="animate-bounce" />
+            <span className="tracking-[0.3em] uppercase">Academic Excellence 2026</span>
           </div>
-          <h1 className="text-6xl md:text-7xl font-black mb-8 tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
-            Wall of Fame
+          <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+            Wall of <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200">Brilliance</span>
           </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed font-light">
-            Honoring the dedication, perseverance, and exceptional academic brilliance of our top performers.
+          <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed font-light mb-12">
+            Celebrating the extraordinary achievements of our students who have set new benchmarks of excellence.
           </p>
+          
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl">
+              <Sparkles className="text-amber-400" size={16} />
+              <span className="text-sm font-medium">S.S.C. Result 2026</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-xl">
+              <Sparkles className="text-amber-400" size={16} />
+              <span className="text-sm font-medium">H.S.C. Result 2026</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <div className="container mx-auto px-4 -mt-16 relative z-20">
-        {/* English Medium Section */}
-        <div className="mb-32">
-          <div className="flex flex-col items-center mb-16 text-center">
-            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-blue-900 shadow-2xl border border-gray-100 mb-6">
-              <GraduationCap size={32} />
+      {/* Main Banner Section */}
+      <section className="container mx-auto px-4 -mt-12 md:-mt-20 pb-24 relative z-20">
+        <div className="bg-white p-2 md:p-4 rounded-[2rem] md:rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] border border-white/50 backdrop-blur-sm group">
+          <div className="relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] bg-slate-100">
+            {/* Toolbar Overlay */}
+            <div className="absolute top-6 right-6 z-30 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a 
+                href={bannerImage} 
+                download 
+                className="w-12 h-12 bg-white/90 backdrop-blur-md text-slate-900 rounded-full flex items-center justify-center shadow-xl hover:bg-amber-400 hover:text-white transition-all transform hover:scale-110"
+                title="Download Banner"
+              >
+                <Download size={20} />
+              </a>
+              <button 
+                onClick={() => window.open(bannerImage, '_blank')}
+                className="w-12 h-12 bg-white/90 backdrop-blur-md text-slate-900 rounded-full flex items-center justify-center shadow-xl hover:bg-blue-600 hover:text-white transition-all transform hover:scale-110"
+                title="View Full Size"
+              >
+                <Maximize2 size={20} />
+              </button>
             </div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-2">English Medium</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            {englishToppers.map((topper, idx) => (
-              <TopperCard key={idx} topper={topper} index={idx} />
-            ))}
+            {/* The Main Banner Image */}
+            <img 
+              src={bannerImage} 
+              alt="D.V.M. High School & Jr. College Toppers 2026" 
+              className="w-full h-auto block shadow-2xl transition-transform duration-700 group-hover:scale-[1.01]"
+              onError={(e) => {
+                e.target.src = "https://placehold.co/1200x800/0a0f1d/amber-400?text=Banner+Image+Not+Found+(Bannerimage.jpeg)";
+              }}
+            />
+            
+            {/* Interactive Shine Effect */}
+            <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
           </div>
         </div>
 
-        {/* Hindi Medium Section */}
-        <div className="mb-32">
-          <div className="flex flex-col items-center mb-16 text-center">
-            <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-orange-600 shadow-2xl border border-gray-100 mb-6">
-              <Star size={32} />
-            </div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-2">Hindi Medium</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full"></div>
+        {/* Informative Footer */}
+        <div className="mt-16 text-center max-w-3xl mx-auto">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 text-amber-600 rounded-2xl mb-6 shadow-sm">
+            <Crown size={32} />
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            {hindiToppers.map((topper, idx) => (
-              <TopperCard key={idx} topper={topper} index={idx} />
-            ))}
-          </div>
-        </div>
-
-        {/* Prestigious Quote */}
-        <div className="relative mt-40 max-w-4xl mx-auto">
-          <div className="absolute inset-0 bg-blue-900/5 rounded-[40px] blur-3xl"></div>
-          <div className="relative bg-white p-12 md:p-20 rounded-[40px] shadow-2xl border border-gray-50 text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-50 rounded-full mb-10">
-              <Award size={40} className="text-blue-900" />
-            </div>
-            <p className="text-3xl md:text-4xl text-slate-800 font-serif italic leading-snug mb-10">
-              "Success is the result of perfection, hard work, learning from failure, loyalty, and persistence."
-            </p>
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-[2px] bg-orange-500 mb-4"></div>
-              <span className="text-sm font-bold uppercase tracking-[0.4em] text-slate-400">Class of 2024</span>
-            </div>
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">A Legacy of Success</h3>
+          <p className="text-slate-600 leading-relaxed italic">
+            "Education is the most powerful weapon which you can use to change the world. These achievers are the testament to our commitment to excellence."
+          </p>
+          <div className="mt-8 flex justify-center items-center gap-4">
+            <div className="h-px w-12 bg-slate-200"></div>
+            <span className="text-xs font-bold uppercase tracking-widest text-slate-400">DVM High School & Jr. College</span>
+            <div className="h-px w-12 bg-slate-200"></div>
           </div>
         </div>
+      </section>
+
+      {/* Decorative Background Elements */}
+      <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div className="absolute top-1/2 left-0 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl -translate-x-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-50/50 rounded-full blur-3xl translate-x-1/2"></div>
       </div>
     </div>
   );

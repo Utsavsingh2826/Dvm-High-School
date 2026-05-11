@@ -1,48 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Trophy, Star, ArrowRight } from 'lucide-react';
-
-const topAchievers = [
-  { name: "Aditi S. Mishra", percentage: "96.40%", medium: "English" },
-  { name: "Vivek R. Yadav", percentage: "93.60%", medium: "Hindi" },
-  { name: "Rahul J. Gupta", percentage: "94.20%", medium: "English" }
-];
+import { Trophy, Star, ArrowRight, Sparkles } from 'lucide-react';
 
 function AchieversPreview() {
   return (
-    <section className="py-20 bg-blue-900 text-white relative overflow-hidden">
+    <section className="py-24 bg-[#0a0f1d] text-white relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full -mr-32 -mt-32"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-600/10 rounded-full -ml-48 -mb-48 blur-3xl"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-          <div className="mb-6 md:mb-0">
-            <div className="inline-flex items-center gap-2 text-orange-400 font-bold text-sm uppercase tracking-widest mb-4">
-              <Trophy size={16} />
-              Our Hall of Fame
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold">Academic Achievers</h2>
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 text-amber-400 font-bold text-sm uppercase tracking-[0.3em] mb-6 px-4 py-2 bg-white/5 rounded-full border border-white/10 backdrop-blur-sm">
+            <Trophy size={16} className="text-amber-500" />
+            Our Hall of Fame
           </div>
+          <h2 className="text-5xl md:text-7xl font-black mb-8 leading-tight">
+            Academic <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">Achievers 2026</span>
+          </h2>
+          <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
+            Witness the historic performance of our S.S.C. and H.S.C. students. Their hard work and dedication have once again placed D.V.M. High School at the pinnacle of excellence.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-md">
+              <div className="text-amber-400 font-black text-3xl mb-1">97%</div>
+              <div className="text-xs uppercase tracking-widest text-slate-500 font-bold">School Result</div>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-md">
+              <div className="text-blue-400 font-black text-3xl mb-1">93.80%</div>
+              <div className="text-xs uppercase tracking-widest text-slate-500 font-bold">Top Scorer (S.S.C.)</div>
+            </div>
+            <div className="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-md">
+              <div className="text-purple-400 font-black text-3xl mb-1">82.67%</div>
+              <div className="text-xs uppercase tracking-widest text-slate-500 font-bold">H.S.C. Topper</div>
+            </div>
+          </div>
+
           <Link 
             to="/achievers" 
-            className="flex items-center gap-2 text-orange-400 font-bold hover:text-white transition-colors"
+            className="group inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-10 py-5 rounded-full font-bold text-lg hover:shadow-[0_0_40px_rgba(245,158,11,0.4)] transition-all transform hover:-translate-y-1"
           >
-            View All Toppers <ArrowRight size={20} />
+            View Full Topper List <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {topAchievers.map((achiever, idx) => (
-            <div key={idx} className="bg-white/10 backdrop-blur-md border border-white/10 p-8 rounded-3xl hover:bg-white/20 transition-all">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-6 shadow-lg">
-                <Star size={20} fill="white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2">{achiever.name}</h3>
-              <p className="text-blue-200 mb-4">{achiever.medium} Medium</p>
-              <div className="text-4xl font-black text-orange-400">{achiever.percentage}</div>
-            </div>
-          ))}
-        </div>
+      </div>
+      
+      {/* Floating Sparkles */}
+      <div className="absolute top-1/4 left-10 animate-pulse text-amber-500/20">
+        <Sparkles size={48} />
+      </div>
+      <div className="absolute bottom-1/4 right-10 animate-pulse delay-500 text-blue-500/20">
+        <Sparkles size={32} />
       </div>
     </section>
   );
