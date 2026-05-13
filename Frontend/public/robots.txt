@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dvmhighschool.com/sitemap.xml
+Sitemap: https://dvmhighschool.org/sitemap.xml
